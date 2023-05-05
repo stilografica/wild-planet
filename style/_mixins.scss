@@ -1,0 +1,29 @@
+@mixin button($bg-color, $color-text) {
+  background-color: $bg-color;
+  padding: 12px 20px;
+  border: 1px solid $bg-color;
+  color: $color-text;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 0.4375rem;
+  &:hover {
+    background-color: $transparent;
+    color: $bg-color;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+}
+
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 599px) { @content; }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) { @content; }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
+}

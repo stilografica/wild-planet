@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>WildPlanet</title>
+  </head>
+
+  <body class="hero">
+    <header>
+      <nav class="navigation">
+        <img src="img/logo.png" alt="brand" class="brand" />
+        <ul class="menu" id="menu">
+          <li class="menu__item"><a href="#"> Africa</a></li>
+          <li class="menu__item"><a href="#">South Africa</a></li>
+          <li class="menu__item"><a href="#">Australia</a></li>
+          <li class="menu__item"><a href="#">Asia</a></li>
+        </ul>
+        <button type="button" class="button">More info</button>
+        <i
+          class="fa fa-bars navigation__mobile-icon"
+          title="Menu"
+          aria-hidden="true"
+          size="30px"
+          id="menu-icon"
+          onclick="getMobileMenu()"
+        ></i>
+      </nav>
+    </header>
+    <main>
+      <section class="content">
+        <section>
+          <h3 class="content__title">Wildlife Continents</h3>
+          <h1 class="content__subtitle">Africa</h1>
+        </section>
+        <section class="content__info">
+          <p class="content__text">
+            Africa the best place to lose yourself and discover a new world.
+          </p>
+          <button type="button" class="button">Subcribe</button>
+        </section>
+      </section>
+      <section>
+        <img src="img/main.png" class="main-image" />
+      </section>
+    </main>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
